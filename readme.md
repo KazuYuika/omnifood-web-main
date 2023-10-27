@@ -25,6 +25,6 @@ If you find any issues or have any suggestions for improvements, please feel fre
 
 ## Author
 
-[Nannu](https://github.com/nannu-coder)
+[Kazu](https://github.com/KazuYuika)
 
 ## Thanks for visiting!
