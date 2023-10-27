@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/reponsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -19,14 +20,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-aos="zoom-out-down" data-aos-duration="1000">
       <a href="#" class="feature-title p-20 mt-20">
         <ul>
           <li class="flex items-center gap-10">
             <img
               src="logo.svg"
               alt="logo"
-              style="width: 30%; margin-top: 20px"
+              style="width: 27%; margin-top: 20px"
             />
             PS' Cackery
           </li>
@@ -36,16 +37,19 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a href="#" class="main-nav-link">Home</a>
+            <a href="#home" class="main-nav-link">Home</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">About</a>
+            <a href="#about" class="main-nav-link">About</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Testimonials</a>
+            <a href="#how" class="main-nav-link">how to order</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Offers</a>
+            <a href="#testimonial" class="main-nav-link">Testimonials</a>
+          </li>
+          <li>
+            <a href="#offers" class="main-nav-link">Offers</a>
           </li>
           <li>
             <a href="#" class="main-nav-link nav-cta"> Order Now</a>
@@ -60,9 +64,9 @@
     </header>
 
     <main>
-      <section class="hero-section" id="home">
+      <section class="hero-section" id="home" >
         <div class="hero">
-          <div class="hero-text-box">
+          <div class="hero-text-box" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="heading-primary">
               Customized Cakes for Every Occasion, Delivered to Your Doorstep
             </h1>
@@ -107,30 +111,30 @@
               </p>
             </div>
           </div>
-          <div class="hero-image-box">
+          <div class="hero-image-box" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/gallery/hero.png" alt="banner" class="hero-img" />
           </div>
         </div>
       </section>
-      <section class="section-about fade-in" id="about">
+      <section class="section-about fade-in" id="about" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
-          <span class="subheading">About</span>
+          
 
           <div class="hero-text-box">
             <h2 class="heading-secondary">About PS' Cakery</h2>
-            <p class="hero-description">
+            <p class="hero-description" data-aos="zoom-in-right" data-aos-duration="2000">
               PS' Cakery is a custom cake shop that specializes in creating
               delicious and beautiful cakes for all occasions. We offer a wide
               variety of flavors and designs to choose from, so you can find the
               perfect cake for your next birthday, wedding, anniversary, or
               other special event.
             </p>
-            <p class="hero-description">
+            <p class="hero-description" data-aos="zoom-in-right" data-aos-duration="2000">
               Our cakes are made with fresh, high-quality ingredients, and we
               take pride in our attention to detail. We want to make sure that
               your cake is not only delicious, but also visually stunning.
             </p>
-            <p class="hero-description">
+            <p class="hero-description" data-aos="zoom-in-right" data-aos-duration="2000">
               We are committed to providing our customers with the best possible
               experience. We want you to love your PS' Cakery cake, and we will
               work hard to make sure that you are happy with every aspect of
@@ -148,7 +152,7 @@
         </div>
 
         <div class="container grid grid-cols-4">
-          <div class="feature">
+          <div class="feature" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1000">
             <ion-icon class="feature-icon" name="bulb-outline"></ion-icon>
             <p class="feature-title">Wide variety of Offers</p>
             <p class="feature-text">
@@ -156,7 +160,7 @@
               you can find the perfect cake for your next event.
             </p>
           </div>
-          <div class="feature">
+          <div class="feature" data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="1000">
             <ion-icon class="feature-icon" name="diamond-outline"></ion-icon>
             <p class="feature-title">High Quality</p>
             <p class="feature-text">
@@ -164,7 +168,7 @@
               take pride in our attention to detail.
             </p>
           </div>
-          <div class="feature">
+          <div class="feature" data-aos="zoom-in-down" data-aos-delay="1000" data-aos-duration="1000">
             <ion-icon class="feature-icon" name="cart-outline"></ion-icon>
             <p class="feature-title">Delivery Options</p>
             <p class="feature-text">
@@ -172,7 +176,7 @@
               delivered right to your door.
             </p>
           </div>
-          <div class="feature">
+          <div class="feature" data-aos="zoom-in-down" data-aos-delay="1500" data-aos-duration="1000">
             <ion-icon class="feature-icon" name="thumbs-up-outline"></ion-icon>
             <p class="feature-title">Best Customer Service</p>
             <p class="feature-text">
@@ -184,14 +188,17 @@
       </section>
 
       <section class="section-how" id="how">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
           <span class="subheading"> How it works </span>
           <h2 class="heading-secondary">
             Order your customized cake in simple 3 steps
           </h2>
         </div>
-        <div class="container grid grid-cols-2 grid-y-center">
-          <div class="step-text-box">
+        <div class="container grid grid-cols-2 grid-y-center" >
+          <div class="step-text-box" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Choose your cake</h3>
             <p class="step-description">
@@ -202,14 +209,20 @@
               combos, minimalist cakes, and cupcakes.
             </p>
           </div>
-          <div class="step-img-box">
+          <div class="step-img-box" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500"> 
             <img
               src="./img/choosing2.jpeg"
               alt="cakes gallery"
               class="step-img"
             />
           </div>
-          <div class="step-img-box">
+          <div class="step-img-box" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500">
             <img
               src="./img/custom_cake2.jpeg"
               alt="customize cake"
@@ -217,7 +230,10 @@
             />
           </div>
 
-          <div class="step-text-box">
+          <div class="step-text-box" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500">
             <p class="step-number">02</p>
             <h3 class="heading-tertiary">Customize your cake</h3>
             <p class="step-description">
@@ -227,7 +243,10 @@
             </p>
           </div>
 
-          <div class="step-text-box">
+          <div class="step-text-box" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500">
             <p class="step-number">03</p>
             <h3 class="heading-tertiary">Place your order</h3>
             <p class="step-description">
@@ -241,21 +260,24 @@
             </p>
           </div>
 
-          <div class="step-img-box">
+          <div class="step-img-box" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500">
             <img src="./img/ordered.jpeg" alt="order cake" class="step-img" />
           </div>
         </div>
       </section>
 
       <section class="section-offers" id="offers">
-        <div class="container centered">
+        <div class="container centered" data-aos="fade-up" data-aos-duration="2000">
           <span class="subheading"> Offers </span>
           <h2 class="heading-secondary">
             We offer a wide variety of customized cakes for all occasions
           </h2>
         </div>
         <div class="container grid grid-cols-3 margin-bottom-md">
-          <div class="diets">
+          <div class="diets" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="500">
             <h3 class="heading-tertiary">Customized Cakes for All Occasions</h3>
             <ul class="list">
               <li class="list-item">
@@ -308,7 +330,7 @@
               </li>
             </ul>
           </div>
-          <div class="diets">
+          <div class="diets" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="500">
             <h3 class="heading-tertiary">
               We accept a variety of payment methods
             </h3>
@@ -327,7 +349,7 @@
               </li>
             </ul>
           </div>
-          <div class="diets">
+          <div class="diets" data-aos="fade-down" data-aos-delay="1100" data-aos-duration="1000" data-aos-offset="500">
             <h3 class="heading-tertiary">Delivery Areas</h3>
             <ul class="list">
               <li class="list-item">
@@ -369,14 +391,14 @@
 
       <section class="section-testimonials" id="testimonial">
        
-          <div class="testimonials-container">
+          <div class="testimonials-container" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
             <span class="subheading">Testimonials</span>
             <h2 class="heading-secondary">
               What our customers say about PS' Cakery
             </h2>
 
             <div class="testimonials">
-              <figure class="testimonial">
+              <figure class="testimonial" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
                 <img
                   class="testimonial-img"
                   alt="Photo of customer Dave Bryson"
@@ -392,7 +414,7 @@
                 <p class="testimonial-name">&mdash; Dave Bryson</p>
               </figure>
 
-              <figure class="testimonial">
+              <figure class="testimonial" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
                 <img
                   class="testimonial-img"
                   alt="Photo of customer Ben Hadley"
@@ -407,7 +429,7 @@
                 <p class="testimonial-name">&mdash; Ben Hadley</p>
               </figure>
 
-              <figure class="testimonial">
+              <figure class="testimonial" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
                 <img
                   class="testimonial-img"
                   alt="Photo of customer Steve Miller"
@@ -422,7 +444,7 @@
                 <p class="testimonial-name">&mdash; Steve Miller</p>
               </figure>
 
-              <figure class="testimonial">
+              <figure class="testimonial" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
                 <img
                   class="testimonial-img"
                   alt="Photo of customer Hannah Smith"
@@ -440,84 +462,84 @@
           </div>
 
           <div class="gallery">
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/386057185_293542553443074_4469441794254379566_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHVg2W9RpbFoyk7S4Ncvxzff4h_A-sw6z1_iH8D6zDrPUmH2rPV8BBwSqjtwAxoE08jYq1mxeYUsxZaNYhc_JGW&_nc_ohc=ol_uYHgyCpUAX9XCtl1&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=00_AfBVXBVkPedm2doOR9QAqC3Qkr_aZKkn2so7e7akVXcSzQ&oe=6540A9AF"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/386155716_293542210109775_7580440532262507063_n.jpg?stp=c0.18.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHJIKrJ54PXSc6CUoK3WsepzGiBInqABnXMaIEieoAGdc2_2Bswp6ymmniirc6CfalP3lluky0QKJ47HIdTolgz&_nc_ohc=7393kbj6_OkAX-xYUpk&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=00_AfCAmFpeKscaLDrqqO5c6EgX12feF1EYkjWXt508YwiI4Q&oe=654047F0"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/385774810_293539300110066_3251004772297765745_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFuAGSt6QaSgBMGGp5NFM5EsOkJTBUIPuWw6QlMFQg-5acvMlVewbp7ZmAMgtKjYBCMNEtIgMPFybxNeJU0cDrM&_nc_ohc=Ct_fzUWM85oAX8D0X4i&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&oh=00_AfBTS1cQYlvmHG03Ag_xVKMnqIMyS_q0tPEKEtrEem5Xcg&oe=654179B2"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/386149276_293538136776849_4397629652800866024_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCnx28ZcibJTXNC8hWypvdij7Z2HEObT2KPtnYcQ5tPbdnUv54RRDp6j8CyB_LIhv8SDyM6kyX5xMrmCM7CabC&_nc_ohc=0bIBZlDnAP4AX8le72R&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&oh=00_AfAu94RDQrjJDYMIKpxmxGRKAbDK2IigeCUJDv4KMjY72Q&oe=6540C86A"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/385910086_293536413443688_8168052307926988154_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHQ6zPcdq0mpUKfeDvHrgDkZ6wih8xoUYFnrCKHzGhRgSPQ481prB6F9mvAV1mBvKEyZpy4xt7OvXa4ktjrhpU0&_nc_ohc=x6uBUs2joKgAX-AeNDm&_nc_oc=AQnMhqruXZXZHwoCi13DAykawaETgxtx0Z_0hLJGH39CVcnZeYkqRZAVDRFriLBCGpM&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&oh=00_AfAKUrHeMBPuWr1hiYxOx3f2hqjZaLhnXcm-rlue17CHIg&oe=65416A9E"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fcrk2-1.fna.fbcdn.net/v/t39.30808-6/396860519_307693545361308_1523789941814677190_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHMNO6pxcb1Y07AHRR7j2SM7KVZwwGFfEnspVnDAYV8SQGC_rxC3kLBBXGZreisf2uBH3gT5q5jx-_regQAuf2O&_nc_ohc=6aagd5124XEAX8sC9vY&_nc_zt=23&_nc_ht=scontent.fcrk2-1.fna&oh=00_AfCdEMeQXf0ip_2ZlJ--17QQysx5Mk8Vff97MOJG4ZugJw&oe=65414B32"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/396556377_307696035361059_5093203066024485307_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFPWSs-fd48NsegAtWwoRrwjWSMSKNTkwmNZIxIo1OTCUlosR9Pmp4JGGrmSJk5WbealABDvvfN50ZDllyX_uan&_nc_ohc=PoztC5JxHNwAX9cR3nm&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&oh=00_AfBKZYUbd57nLc4QjevYJEB5M2EBRYwpuMgQHA2LnZ9Usg&oe=65415D10"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fcrk2-2.fna.fbcdn.net/v/t39.30808-6/395939644_307691145361548_662863648065015000_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFbxz8NmDQHHTLirtjhFOZZknSDO__ZhYqSdIM7_9mFiidkZZ_3D99hT1_mGvoOMERcYirs7yHNjYVL0NuaXDqT&_nc_ohc=6pQZY02Dz8AAX_VWTHn&_nc_zt=23&_nc_ht=scontent.fcrk2-2.fna&oh=00_AfCrbP4pi1V2YhnSXrcZ9ktB_iWjVm8vCUQ1AmhgZGzMJw&oe=65411A0B"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/396537721_307698535360809_7689181297989136509_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHUbYvL8w0q3Qf3gMcSaodwKQCuBv9iKQkpAK4G_2IpCb3JZ9gTKwI7T-Sht4VPS6NJyJw7cfiTvcpD0gWOckHD&_nc_ohc=POJV83tT1xQAX8esGW7&_nc_zt=23&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfDviQ6fSPdhl0sn3MxKVIBdZSDG8aL95lI7v4g5qpzpTg&oe=653FFFCF"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fcrk2-1.fna.fbcdn.net/v/t39.30808-6/394208046_305089165621746_7822201314630215424_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFjkGkAfxAdzH4wGIt93Cs9GNUm9McCNO8Y1Sb0xwI071sy-2KrU75-l0qLypHSEUNrPxTttNLXe4aBLL0-1Wil&_nc_ohc=xL91N_7HFzEAX-L1TfC&_nc_zt=23&_nc_ht=scontent.fcrk2-1.fna&oh=00_AfDBxeNQRWKE7ZNrzUqz2zvToCK-0QJ5B2-7CHlwxLw2BA&oe=6540F8A3"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fcrk2-1.fna.fbcdn.net/v/t39.30808-6/396504405_307699555360707_7506163751838289154_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFoWnipPKJn487UsSy1WicbpOw4T7VQSiKk7DhPtVBKIj4CQsCEWpAQf6utQzG9a0VE4oaIf44jp2T6DNAIP1PT&_nc_ohc=IpM-I4vKMrYAX_WcaHX&_nc_zt=23&_nc_ht=scontent.fcrk2-1.fna&oh=00_AfC6_TCcClyictEyAC5lLJIAvxyb3aaPw_bJyvy9GW4yyw&oe=653FDC01"
                 alt="Photo of beautifully
             arranged food"
               />
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="200">
               <img
                 src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/386061317_293541056776557_1268859396111886794_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE1D1mpZIkbODINCSuIDYBP_btjisutpvD9u2OKy62m8Kgjfztxd3j6DmqzHeIX-3EbMmwbQvnNjg2wSI2dGLwd&_nc_ohc=pYFzofeZIpAAX9Zv7g4&_nc_zt=23&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfCVpLal4ZqBG8lRKt-KTws6gEjEcHvIHRrDLSFUqur-dg&oe=653FFE4D"
                 alt="Photo of beautifully
@@ -529,7 +551,7 @@
       </section>
 
       <section class="section-cta" id="cta">
-        <div class="container">
+        <div class="container" data-aos="flip-down" data-aos-offset="400" data-aos-duration="1000" data-aos-delay="300">
           <div class="cta">
             <div class="cta-text-box">
               <h2 class="heading-secondary">Get in touch with us</h2>
@@ -638,11 +660,11 @@
           <p class="footer-heading">Information</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="/about-us">About PS' Cakery</a>
+              <a class="footer-link" href="#about">About PS' Cakery</a>
             </li>
-            <li><a class="footer-link" href="/products">Products</a></li>
-            <li><a class="footer-link" href="/delivery">Delivery</a></li>
-            <li><a class="footer-link" href="/contact-us">Contact Us</a></li>
+            <li><a class="footer-link" href="#offers">Offers</a></li>
+            <li><a class="footer-link" href="#testimonials">testimonials</a></li>
+            <li><a class="footer-link" href="#footer">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -664,8 +686,35 @@
       </div>
     </footer>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+   AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
     <script src="./JS/script.js"></script>
     <script
       defer
