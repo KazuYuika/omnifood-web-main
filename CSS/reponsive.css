@@ -214,9 +214,10 @@
   }
 
   .nav-col {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: span 2;
     margin-bottom: 3.2rem;
+
   }
 }
 
