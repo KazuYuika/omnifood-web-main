@@ -73,6 +73,7 @@
     grid-template-columns: 1fr;
     padding: 0 8rem;
     gap: 6.4rem;
+    padding-top: 1rem;
   }
 
   .hero-text-box,
