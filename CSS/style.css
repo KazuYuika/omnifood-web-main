@@ -517,7 +517,7 @@ body {
   grid-template-columns: 55fr 45fr;
   align-items: center;
   background-color: var(--tints-color);
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
 
   
